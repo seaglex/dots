@@ -5,7 +5,7 @@
 export GIT_PS1_SHOWDIRTYSTATE=true
 export GIT_PS1_SHOWUNTRACKEDFILES=true
 
-export PS1='[\u@\h \W$(__git_ps1 " (%s)")]\$ '
+export PS1='[\u@\h \W$(__git_ps1 " (%s)")]\n\$ '
 
 # to edit the command line as vi, add the following command
 set -o vi
@@ -14,6 +14,7 @@ set -o vi
 # thus the output of sort-command differs from the output of python/java/c#' sort(string[]),
 # which sorts strings according to the ASCII order
 # add the following command to make sort-command consistent with python/java/c#' sort
-export LC_ALL="C"
-export LC_COLLATE="C"
-export LC_CTYPE="C"
+# However, it make MAC unable to display the path with "non-ascii" character well
+# export LC_ALL="C"
+# export LC_COLLATE="C"
+# export LC_CTYPE="C"
