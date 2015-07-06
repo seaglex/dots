@@ -57,7 +57,6 @@ case "$ans"
             git clone http://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
         fi
 
-        echo "Install ctags"
-        echo "y" | sudo yum install ctags > /dev/null
+        echo "Please install ctags; sudo yum/brew/opt-get install ctags > /dev/null"
         printf '\n';;
 esac
